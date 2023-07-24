@@ -1,0 +1,24 @@
+<%- include("partials/header") -%>
+
+<form action="/" method="post">
+    <div class="section">
+        <label><h3>Convert From:</h3></label><br>
+        <select name="tempSelect1" id="tempSelect1">
+            <option value="Fahrenheit">Fahrenheit (°F)</option>
+            <option value="Celsius">Celsius (°C)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+        </select>
+        <input type="number" name="const" placeholder="e.g 123" autocomplete="off">
+    </div>
+    <div class="section">
+        <label><h3>Convert To:</h3></label><br>
+        <select name="tempSelect2" id="tempSelect2">
+            <option value="Fahrenheit">Fahrenheit (°F)</option>
+            <option value="Celsius">Celsius (°C)</option>
+            <option value="Kelvin">Kelvin (K)</option>
+        </select>
+    </div>
+    <button type="submit">Convert</button>
+</form>
+
+<%- include("partials/footer") -%>
